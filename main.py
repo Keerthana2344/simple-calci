@@ -23,3 +23,14 @@ t3=Entry()
 t3.place(x=170,y=150)
 
 
+
+def add():
+  num1=int(t1.get())
+  num2=int(t2.get())
+  sum=num1 + num2
+  t3.insert(END,str(sum))
+
+b1=Button(window, text="Add",command=add)
+b1.place(x=50,y=200)
+
+
